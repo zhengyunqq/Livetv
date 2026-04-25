@@ -5,13 +5,5 @@ services:
     restart: unless-stopped
     ports:
       - "8888:8888"
-    environment:
-      REPO_URL: "https://github.com/YueChan/Live.git"
-      REPO_BRANCH: "main"
-      STREAM_PROXY_PREFIX: "http://192.168.2.10:4022/udp/"
-      RTSP_PROXY_PREFIX: "http://192.168.2.10:4022/rtsp/"
-      HTTP_PORT: "8888"
-      UPDATE_INTERVAL_SECONDS: "21600"
-      TZ: "Asia/Shanghai"
     volumes:
       - ./data:/data
