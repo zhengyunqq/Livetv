@@ -1,0 +1,16 @@
+{
+  "name": "iptv-sync-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.2.13",
+  "scripts": {
+    "build": "bunx tsc -p tsconfig.json",
+    "start": "bun dist/main.js",
+    "dev": "bun --watch src/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.50",
+    "typescript": "^5.8.3"
+  }
+}

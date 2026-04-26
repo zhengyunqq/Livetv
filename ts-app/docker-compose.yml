@@ -1,0 +1,9 @@
+services:
+  iptv-sync-ts:
+    build: .
+    container_name: iptv-sync-ts
+    restart: unless-stopped
+    ports:
+      - "8889:8888"
+    volumes:
+      - ./data:/data
