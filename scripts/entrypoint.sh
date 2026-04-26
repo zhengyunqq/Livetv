@@ -13,4 +13,4 @@ cleanup() {
 trap cleanup INT TERM
 
 cd "${HTTP_ROOT}"
-exec python3 -m http.server "${HTTP_PORT}" --bind 0.0.0.0 --directory "${HTTP_ROOT}"
+exec python3 /app/scripts/http_server.py
